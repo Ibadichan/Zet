@@ -1,0 +1,67 @@
+.our-team {
+  min-height: 901px;
+  color: white;
+
+  background:
+    linear-gradient(
+      0deg,
+      rgba(165, 170, 177, 0.5),
+      rgba(41, 50, 60, 0.5)
+    ),
+    url('../img/coniferous_forest.jpg') top center no-repeat
+  ;
+  background-color: #3f4851;
+  background-size: auto, cover;
+
+  .specialists {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .to-our-team {
+    border-radius: 20px;
+  }
+}
+
+.specialist {
+  line-height: 20px;
+  color: #29323c;
+  text-align: center;
+  background-color: rgba(242, 242, 242, 0.75);
+
+  h3 {
+    font-weight: 700;
+  }
+
+  &-info-popup {
+    color: white;
+    text-transform: uppercase;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    background: transparent linear-gradient(
+      0deg,
+      rgba(72, 85, 99, 0.7),
+      rgba(41, 50, 60, 0.7)
+    );
+  }
+
+  &-social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.specialist-social-button {
+  display: flex;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  opacity: 0.7;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}

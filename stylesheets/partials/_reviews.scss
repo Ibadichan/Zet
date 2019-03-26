@@ -1,0 +1,46 @@
+.review-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.review-item {
+  text-align: center;
+
+  &-quote {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  &-client {
+    line-height: 20px;
+    font-style: normal;
+
+    img {
+      border-radius: 50%;
+      background-color: #eeeeee;
+    }
+
+    b {
+      font-weight: 700;
+    }
+  }
+}
+
+.review-list-controls {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.review-list-control button {
+  padding: 0;
+  border: 1px solid #2b3746;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.review-list-control.current button {
+  background-color: #2b3746;
+}

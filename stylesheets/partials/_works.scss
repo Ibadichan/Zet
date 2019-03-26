@@ -1,0 +1,27 @@
+.work-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.work-item-image {
+  background-color: #eeeeee;
+}
+
+.work-item-popup {
+  line-height: 20px;
+  color: white;
+  text-align: center;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  background: transparent linear-gradient(
+    0deg,
+    rgba(72, 85, 99, 0.7),
+    rgba(41, 50, 60, 0.7)
+  );
+
+  h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

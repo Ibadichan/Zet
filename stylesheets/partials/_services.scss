@@ -1,0 +1,20 @@
+.services {
+  background-color: #f5f5f5;
+}
+
+.service-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-item {
+  text-align: center;
+
+  h3 {
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

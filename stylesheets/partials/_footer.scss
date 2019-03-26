@@ -1,0 +1,15 @@
+.main-footer-social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .main-footer-social-button,
+  .main-footer-social-button {
+    opacity: 0.7;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}

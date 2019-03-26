@@ -1,0 +1,66 @@
+.main-header {
+  min-height: 750px;
+  color: white;
+
+  background:
+    linear-gradient(
+      0deg,
+      rgba(72, 85, 99, 0.7),
+      rgba(41, 50, 60, 0.7)
+    ),
+    url('../img/books_in_drawer.jpg') top center no-repeat
+  ;
+  background-color: #3f4851;
+  background-size: auto, cover;
+
+  .scroll-down {
+    padding: 0;
+    border: 1px solid rgb(242, 242, 242);
+    border-radius: 50%;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      border-color: rgba(242, 242, 242, 0.8);
+    }
+  }
+}
+
+.main-navigation {
+  .open-main-menu {
+    padding: 0;
+    font: inherit;
+    line-height: 36px;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: rgb(255, 255, 255, 0.8);
+    }
+  }
+}
+
+.main-header-content {
+  h1 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .button {
+    border-radius: 20px;
+    background-color: transparent;
+  }
+}

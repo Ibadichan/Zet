@@ -1,0 +1,50 @@
+.pack-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .pack-item {
+    border: 1px solid #eeeeee;
+  }
+
+  .pack-item-current {
+    border-top: 5px solid #485563;
+  }
+}
+
+.pack-item-header {
+  text-align: center;
+  border-bottom: 1px solid #eeeeee;
+
+  h3 {
+    color: #485563;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+
+  .pack-item-price {
+    color: #485563;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 400;
+  }
+
+  .pack-item-duration {
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
+
+.pack-item-content {
+  .pack-item-description {
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .pack-item-signup {
+    border: 0;
+    border-radius: 20px;
+    background-color: #485563;
+  }
+}

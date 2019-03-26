@@ -1,0 +1,51 @@
+.feedback {
+  min-height: 649px;
+
+  color: #f6f6f6;
+  line-height: 36px;
+
+  background:
+    linear-gradient(
+      0deg,
+      rgba(41, 50, 60, 0.7),
+      rgba(72, 85, 99, 0.7),
+    ),
+    url('../img/home_environment.jpg') top center no-repeat
+  ;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: auto, cover;
+}
+
+.feedback-form-userdata {
+  padding: 0;
+  border: 0;
+}
+
+.feedback-form-item {
+  label {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  input,
+  textarea {
+    padding: 0;
+    font: inherit;
+    color: #f6f6f6;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      border-color: rgba(242, 242, 242, 0.8);
+    }
+  }
+}
+
+.feedback-form-submit {
+  text-transform: capitalize;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  background-color: transparent;
+}
