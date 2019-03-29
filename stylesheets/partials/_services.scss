@@ -1,14 +1,16 @@
 .services {
-  padding: 100px 0;
+  padding: 93px 0;
   background-color: rgb(245, 245, 245);
 
   .section-subtitle {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 }
 
 .service-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -16,8 +18,8 @@
 
 .service-item {
   position: relative;
-  width: (1170px / 4);
-  padding-top: 145px;
+  width: 270px;
+  padding-top: 147px;
   text-align: center;
 
   &::before {
@@ -65,7 +67,7 @@
   }
 
   p {
-    margin: 0 10px;
+    margin: 0;
     color: rgba(41, 50, 60, 0.8);
   }
 }

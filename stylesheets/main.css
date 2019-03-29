@@ -398,7 +398,7 @@ input[type=radio].visually-hidden {
 .section-subtitle {
   position: relative;
   margin: 0;
-  padding-bottom: 14px;
+  padding-bottom: 13px;
   color: rgba(41, 50, 60, 0.8);
   line-height: 30px;
   text-align: center;
@@ -414,6 +414,14 @@ input[type=radio].visually-hidden {
   background-color: #525961;
 }
 
+@keyframes slide-top {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .button {
   padding: 0;
   font: inherit;
@@ -433,7 +441,7 @@ input[type=radio].visually-hidden {
 .main-header {
   position: relative;
   min-height: 750px;
-  padding: 32px 0 160px;
+  padding: 26px 0 160px;
   color: #e8e8e8;
   background: linear-gradient(0deg, rgba(72, 85, 99, 0.7), rgba(41, 50, 60, 0.7)), url("../img/books_in_drawer.jpg") top center no-repeat;
   background-color: #3f4851;
@@ -476,9 +484,10 @@ input[type=radio].visually-hidden {
 .main-navigation {
   display: flex;
   width: 100%;
-  margin-bottom: 207px;
+  margin-bottom: 205px;
 }
 .main-navigation .main-header-logo {
+  align-self: flex-end;
   width: 85px;
   height: 32px;
   margin-right: auto;
@@ -486,7 +495,8 @@ input[type=radio].visually-hidden {
 .main-navigation .open-main-menu {
   position: relative;
   margin-left: auto;
-  padding: 0 45px 0 5px;
+  padding: 0;
+  padding-right: 40px;
   font: inherit;
   line-height: 36px;
   color: #e8e8e8;
@@ -502,7 +512,7 @@ input[type=radio].visually-hidden {
 .open-main-menu span {
   position: absolute;
   top: 50%;
-  right: 5px;
+  right: 0;
   width: 20px;
   height: 2px;
   background-color: #e8e8e8;
@@ -533,6 +543,7 @@ input[type=radio].visually-hidden {
   margin-bottom: 25px;
   font-size: 36px;
   line-height: 40px;
+  letter-spacing: -1px;
   font-weight: 700;
   text-align: center;
 }
@@ -552,15 +563,17 @@ input[type=radio].visually-hidden {
 }
 
 .services {
-  padding: 100px 0;
+  padding: 93px 0;
   background-color: whitesmoke;
 }
 .services .section-subtitle {
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 .service-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -568,8 +581,8 @@ input[type=radio].visually-hidden {
 
 .service-item {
   position: relative;
-  width: 292.5px;
-  padding-top: 145px;
+  width: 270px;
+  padding-top: 147px;
   text-align: center;
 }
 .service-item::before {
@@ -607,12 +620,12 @@ input[type=radio].visually-hidden {
   text-transform: uppercase;
 }
 .service-item p {
-  margin: 0 10px;
+  margin: 0;
   color: rgba(41, 50, 60, 0.8);
 }
 
 .works {
-  padding-top: 100px;
+  padding-top: 97px;
 }
 .works .section-subtitle {
   margin-bottom: 60px;
@@ -654,7 +667,7 @@ input[type=radio].visually-hidden {
   color: #f2f2f2;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4);
-  background: transparent linear-gradient(0deg, rgba(72, 85, 99, 0.7), rgba(41, 50, 60, 0.7));
+  background: linear-gradient(0deg, rgba(72, 85, 99, 0.7), rgba(41, 50, 60, 0.7));
 }
 
 .work-item-popup-content {
@@ -677,19 +690,11 @@ input[type=radio].visually-hidden {
   height: auto;
 }
 
-@keyframes slide-top {
-  0% {
-    transform: translateY(-100px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .reviews {
-  padding: 100px 0;
+  padding: 95px 0;
 }
 .reviews .section-subtitle {
-  margin-bottom: 60px;
+  margin-bottom: 53px;
 }
 .reviews .review-list {
   margin: 0;
@@ -766,7 +771,7 @@ input[type=radio].visually-hidden {
 
 .our-team {
   min-height: 901px;
-  padding: 100px 0;
+  padding: 95px 0;
   color: #f2f2f2;
   background: linear-gradient(0deg, rgba(72, 85, 99, 0.5), rgba(41, 50, 60, 0.5)), url("../img/coniferous_forest.jpg") top center no-repeat;
   background-color: #3f4851;
@@ -785,7 +790,7 @@ input[type=radio].visually-hidden {
   justify-content: space-between;
   width: 100%;
   margin: 0;
-  margin-bottom: 90px;
+  margin-bottom: 93px;
   padding: 0;
   list-style: none;
 }
@@ -794,6 +799,7 @@ input[type=radio].visually-hidden {
   width: 200px;
   margin: 0 auto;
   padding: 0 20px;
+  font-size: 13px;
   border-radius: 20px;
 }
 
@@ -809,6 +815,7 @@ input[type=radio].visually-hidden {
 }
 .specialist h3 {
   margin: 0;
+  font-size: 15px;
   font-weight: 700;
 }
 .specialist-work {
@@ -861,6 +868,7 @@ input[type=radio].visually-hidden {
   position: relative;
   margin: 0;
   padding-bottom: 8px;
+  font-size: 13px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
@@ -923,7 +931,7 @@ input[type=radio].visually-hidden {
 }
 
 .pricing-table {
-  padding: 100px 0 115px;
+  padding: 98px 0 115px;
 }
 .pricing-table .section-subtitle {
   margin-bottom: 75px;
@@ -979,7 +987,7 @@ input[type=radio].visually-hidden {
 }
 .pack-item-header h3 {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -1015,7 +1023,8 @@ input[type=radio].visually-hidden {
 .pack-item-content .pack-item-signup {
   margin: auto;
   margin-bottom: 0;
-  padding: 2.5px 34px;
+  padding: 2px 34px;
+  font-size: 13px;
   border: 0;
   border-radius: 20px;
   background-color: #485563;
@@ -1104,12 +1113,10 @@ input[type=radio].visually-hidden {
 
 .main-footer-top {
   display: flex;
-  width: 100%;
 }
 
 .main-footer-bottom {
   display: flex;
-  flex-wrap: wrap;
   padding: 45px 0 50px;
 }
 

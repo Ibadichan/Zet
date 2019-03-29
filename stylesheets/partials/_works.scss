@@ -1,5 +1,5 @@
 .works {
-  padding-top: 100px;
+  padding-top: 97px;
 
   .section-subtitle {
     margin-bottom: 60px;
@@ -28,7 +28,7 @@
 
   &-image {
     margin: 0;
-    background-color: #eeeeee;
+    background-color: rgb(238, 238, 238);
   }
 
   &-popup {
@@ -46,7 +46,7 @@
     text-align: center;
 
     background-color: rgba(0, 0, 0, 0.4);
-    background: transparent linear-gradient(
+    background: linear-gradient(
       0deg,
       rgba(72, 85, 99, 0.7),
       rgba(41, 50, 60, 0.7)
@@ -76,14 +76,4 @@
   display: block;
   width: 100%;
   height: auto;
-}
-
-@keyframes slide-top {
-  0% {
-    transform: translateY(-100px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
 }
