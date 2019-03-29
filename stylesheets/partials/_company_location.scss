@@ -1,3 +1,15 @@
-.company-location-image {
-  background-color: #cadbe9;
+.company-location {
+  width: 50%;
+
+  &-image {
+    width: 100%;
+    margin: 0;
+    background-color: rgb(202, 219, 233);
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
 }

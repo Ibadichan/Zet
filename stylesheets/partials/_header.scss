@@ -1,6 +1,8 @@
 .main-header {
+  position: relative;
   min-height: 750px;
-  color: white;
+  padding: 32px 0 160px;
+  color: rgb(232, 232, 232);
 
   background:
     linear-gradient(
@@ -10,28 +12,68 @@
     ),
     url('../img/books_in_drawer.jpg') top center no-repeat
   ;
-  background-color: #3f4851;
+  background-color: rgb(63, 72, 81);
   background-size: auto, cover;
 
   .scroll-down {
+    position: absolute;
+    bottom: 105px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
     padding: 0;
     border: 1px solid rgb(242, 242, 242);
     border-radius: 50%;
     background-color: transparent;
+    transform: translateX(-50%);
+    cursor: pointer;
 
     &:hover,
     &:focus {
-      border-color: rgba(242, 242, 242, 0.8);
+      opacity: 0.8;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 3px;
+      height: 15px;
+      border-radius: 3px;
+      background-color: rgb(242, 242, 242);
+    }
+
+    &::before {
+      left: 18px;
+      transform: translateY(-50%) rotate(-45deg);
+    }
+
+    &::after {
+      right: 18px;
+      transform: translateY(-50%) rotate(45deg);
     }
   }
 }
 
 .main-navigation {
+  display: flex;
+  width: 100%;
+  margin-bottom: 207px;
+
+  .main-header-logo {
+    width: 85px;
+    height: 32px;
+    margin-right: auto;
+  }
+
   .open-main-menu {
-    padding: 0;
+    position: relative;
+    margin-left: auto;
+    padding: 0 45px 0 5px;
     font: inherit;
     line-height: 36px;
-    color: white;
+    color: rgb(232, 232, 232);
     text-transform: uppercase;
     border: 0;
     background-color: transparent;
@@ -39,13 +81,47 @@
 
     &:hover,
     &:focus {
-      color: rgb(255, 255, 255, 0.8);
+      opacity: 0.8;
     }
   }
 }
 
+.open-main-menu span {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 20px;
+  height: 2px;
+  background-color: rgb(232, 232, 232);
+  transform: translateY(-50%);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: rgb(232, 232, 232);
+  }
+
+  &::before {
+    top: -6px;
+  }
+
+  &::after {
+    top: 6px;
+  }
+}
+
 .main-header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   h1 {
+    margin: 0;
+    margin-bottom: 25px;
     font-size: 36px;
     line-height: 40px;
     font-weight: 700;
@@ -53,6 +129,9 @@
   }
 
   p {
+    margin: 0;
+    margin-bottom: 30px;
+    max-width: 650px;
     font-size: 17px;
     line-height: 25px;
     font-weight: 300;
@@ -60,6 +139,7 @@
   }
 
   .button {
+    padding: 0 25px;
     border-radius: 20px;
     background-color: transparent;
   }

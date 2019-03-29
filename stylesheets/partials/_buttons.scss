@@ -3,7 +3,7 @@
   font: inherit;
   line-height: 36px;
   font-weight: 700;
-  color: rgb(255, 255, 255);
+  color: rgb(232, 232, 232);
   text-align: center;
   text-transform: uppercase;
   border: 1px solid rgb(242, 242, 242);
@@ -11,7 +11,7 @@
 
   &:hover,
   &:focus {
-    color: rgb(255, 255, 255, 0.8);
+    color: rgba(232, 232, 232, 0.8);
     border-color: rgb(242, 242, 242, 0.8);
   }
 }

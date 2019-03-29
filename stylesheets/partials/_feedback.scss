@@ -1,7 +1,9 @@
 .feedback {
-  min-height: 649px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 
-  color: #f6f6f6;
+  color: rgb(246, 246, 246);
   line-height: 36px;
 
   background:
@@ -14,14 +16,31 @@
   ;
   background-color: rgba(0, 0, 0, 0.5);
   background-size: auto, cover;
-}
 
-.feedback-form-userdata {
-  padding: 0;
-  border: 0;
+  .feedback-form {
+    width: 410px;
+    margin: auto;
+  }
+
+  .feedback-form-userdata {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
 }
 
 .feedback-form-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 25px;
+
+  &-textarea label {
+    align-self: flex-start;
+  }
+
   label {
     cursor: pointer;
     user-select: none;
@@ -29,10 +48,11 @@
 
   input,
   textarea {
-    padding: 0;
+    width: 300px;
+    padding: 3.5px 5px;
     font: inherit;
-    color: #f6f6f6;
-    border: 1px solid #f2f2f2;
+    color: rgb(246, 246, 246);
+    border: 1px solid rgb(242, 242, 242);
     border-radius: 2px;
     background-color: transparent;
 
@@ -41,11 +61,21 @@
       border-color: rgba(242, 242, 242, 0.8);
     }
   }
+
+  textarea {
+    min-height: 145px;
+    max-height: 145px;
+    min-width: 300px;
+    max-width: 300px;
+  }
 }
 
 .feedback-form-submit {
+  display: block;
+  margin-left: auto;
+  padding: 3.5px 34px;
   text-transform: capitalize;
-  border: 1px solid #f2f2f2;
+  border: 1px solid rgb(242, 242, 242);
   border-radius: 2px;
   background-color: transparent;
 }

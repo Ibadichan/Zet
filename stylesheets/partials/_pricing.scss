@@ -1,50 +1,110 @@
+.pricing-table {
+  padding: 100px 0 115px;
+
+  .section-subtitle {
+    margin-bottom: 75px;
+  }
+}
+
 .pack-list {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
 
   .pack-item {
-    border: 1px solid #eeeeee;
+    width: 385px;
+    border: 1px solid rgb(238, 238, 238);
   }
 
   .pack-item-current {
-    border-top: 5px solid #485563;
+    position: relative;
+    width: 400px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      width: 400px;
+      height: 5px;
+      background-color: rgb(72, 85, 99);
+    }
+  }
+
+  .before-pack-item-current {
+    border-right: 0;
+  }
+
+  .after-pack-item-current {
+    border-left: 0;
   }
 }
 
+.pack-item-current .pack-item-header {
+  max-height: 204px;
+  padding-top: 60px;
+  color: rgb(41, 50, 60);
+}
+
 .pack-item-header {
+  max-height: 164px;
+  padding: 30px;
+  padding-top: 20px;
+  color: rgb(72, 85, 99);
   text-align: center;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  overflow: auto;
 
   h3 {
-    color: #485563;
+    margin: 0;
+    margin-bottom: 10px;
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
   }
 
+  .pack-item-price-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
   .pack-item-price {
-    color: #485563;
     font-size: 45px;
     line-height: 45px;
     font-weight: 400;
   }
 
   .pack-item-duration {
+    color: rgba(72, 85, 99, 0.8);
     font-weight: 300;
     text-transform: uppercase;
   }
 }
 
 .pack-item-content {
+  display: flex;
+  flex-direction: column;
+  height: 340px;
+  padding: 35px;
+  overflow: auto;
+
   .pack-item-description {
+    margin: 0 10px;
     line-height: 40px;
     text-align: center;
   }
 
   .pack-item-signup {
+    margin: auto;
+    margin-bottom: 0;
+    padding: 2.5px 34px;
     border: 0;
     border-radius: 20px;
-    background-color: #485563;
+    background-color: rgb(72, 85, 99);
   }
 }

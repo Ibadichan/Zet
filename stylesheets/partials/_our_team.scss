@@ -1,67 +1,161 @@
 .our-team {
   min-height: 901px;
-  color: white;
+  padding: 100px 0;
+  color: rgb(242, 242, 242);
 
   background:
     linear-gradient(
       0deg,
-      rgba(165, 170, 177, 0.5),
+      rgba(72, 85, 99, 0.5),
       rgba(41, 50, 60, 0.5)
     ),
     url('../img/coniferous_forest.jpg') top center no-repeat
   ;
-  background-color: #3f4851;
+  background-color: rgb(63, 72, 81);
   background-size: auto, cover;
 
+  .section-subtitle {
+    margin-bottom: 85px;
+    color: rgb(242, 242, 242, 0.8);
+
+    &::before {
+      background-color: rgb(242, 242, 242, 0.8);
+    }
+  }
+
   .specialists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
     margin: 0;
+    margin-bottom: 90px;
     padding: 0;
     list-style: none;
   }
 
   .to-our-team {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 0 20px;
     border-radius: 20px;
   }
 }
 
 .specialist {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  padding-bottom: 30px;
   line-height: 20px;
-  color: #29323c;
+  color: rgb(41, 50, 60);
   text-align: center;
   background-color: rgba(242, 242, 242, 0.75);
 
   h3 {
+    margin: 0;
     font-weight: 700;
   }
 
+  &-work {
+    margin-bottom: 20px;
+    color: rgba(41, 50, 60, 0.8);
+  }
+
+  &-info {
+    position: relative;
+    order: -1;
+    width: 270px;
+    height: 270px;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    &:hover &-popup {
+      display: block;
+      animation-name: slide-top;
+      animation-duration: 0.6s;
+    }
+  }
+
+  &-photo {
+    width: 270px;
+    height: 270px;
+    margin: 0;
+  }
+
   &-info-popup {
-    color: white;
-    text-transform: uppercase;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 270px;
+    padding: 50px;
+    padding-top: 105px;
+    color: rgb(232, 232, 232);
 
     background-color: rgba(0, 0, 0, 0.4);
-    background: transparent linear-gradient(
+    background: linear-gradient(
       0deg,
       rgba(72, 85, 99, 0.7),
       rgba(41, 50, 60, 0.7)
     );
+
+    overflow: auto;
   }
 
   &-social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
     margin: 0;
     padding: 0;
     list-style: none;
   }
 }
 
-.specialist-social-button {
-  display: flex;
-  align-items: center;
-  width: 25px;
-  height: 25px;
-  opacity: 0.7;
+.specialist-info-popup p {
+  position: relative;
+  margin: 0;
+  padding-bottom: 8px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
 
-  &:hover,
-  &:focus {
-    opacity: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 40px;
+    height: 2px;
+    background-color: rgb(213, 211, 213);
+    transform: translateX(-50%);
+  }
+}
+
+.specialist-social {
+  li {
+    width: 25px;
+    height: 25px;
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  .specialist-social-button {
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    opacity: 0.7;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
   }
 }

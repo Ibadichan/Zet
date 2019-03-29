@@ -1,46 +1,88 @@
-.review-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.reviews {
+  padding: 100px 0;
+
+  .section-subtitle {
+    margin-bottom: 60px;
+  }
+
+  .review-list {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    list-style: none;
+  }
 }
 
 .review-item {
   text-align: center;
 
+  blockquote {
+    margin: 0;
+  }
+
   &-quote {
+    margin: 0;
+    margin-bottom: 35px;
+    padding-bottom: 30px;
     font-size: 16px;
     line-height: 26px;
+    color: rgb(43, 55, 70);
+    background: url('../img/quotes.png') 50% 100% no-repeat;
   }
 
   &-client {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
     line-height: 20px;
     font-style: normal;
 
     img {
+      width: 65px;
+      height: 65px;
+      margin-bottom: 10px;
       border-radius: 50%;
-      background-color: #eeeeee;
+      background-color: rgb(238, 238, 238);
     }
 
     b {
       font-weight: 700;
     }
+
+    span {
+      color: rgba(41, 50, 60, 0.8);
+    }
   }
 }
 
 .review-list-controls {
-  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 55px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
 
-.review-list-control button {
-  padding: 0;
-  border: 1px solid #2b3746;
-  border-radius: 50%;
-  background-color: white;
-  cursor: pointer;
-}
+.review-list-control {
+  width: 15px;
+  height: 15px;
 
-.review-list-control.current button {
-  background-color: #2b3746;
+  button {
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    border: 1px solid rgb(43, 55, 70);
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  &.current button {
+    background-color: rgb(43, 55, 70);
+  }
 }
